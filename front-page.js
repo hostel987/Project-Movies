@@ -75,8 +75,8 @@ const users = [
 
 // Reviews Data
 const reviews = [
-  { user: "Aisha", movie: "Dangal", rating: 4, comment: "Inspirational and emotional." },
-  { user: "Sneha", movie: "3 Idiots", rating: 5, comment: "Funny and meaningful." }
+  { user: "Astha", movie: "Dangal", rating: 4, comment: "Inspirational and emotional." },
+  { user: "Dipika", movie: "3 Idiots", rating: 5, comment: "Funny and meaningful." }
 ];
 
 // Safe Favorites Load
@@ -315,3 +315,60 @@ function initApp() {
 
 // Start App
 document.addEventListener("DOMContentLoaded", initApp);
+
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+if (menuToggle && navbar) {
+  menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
+}
+
+function initApp() {
+  movieList = document.getElementById("movie-list");
+  favoriteList = document.getElementById("favorite-list");
+  userList = document.getElementById("user-list");
+  reviewList = document.getElementById("review-list");
+  searchInput = document.getElementById("searchInput");
+  genreFilter = document.getElementById("genreFilter");
+
+  const browseBtn = document.getElementById("browse-btn");
+  const usersBtn = document.getElementById("users-btn");
+  const menuToggle = document.getElementById("menu-toggle");
+  const navbar = document.getElementById("navbar");
+
+  loadGenres();
+  showMovies();
+  showFavorites();
+  showUsers();
+  showReviews();
+
+  if (searchInput) {
+    searchInput.addEventListener("input", applyFilters);
+  }
+
+  if (genreFilter) {
+    genreFilter.addEventListener("change", applyFilters);
+  }
+
+  if (browseBtn) {
+    browseBtn.addEventListener("click", () => {
+      showMovies();
+      document.getElementById("movies")?.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
+  if (usersBtn) {
+    usersBtn.addEventListener("click", () => {
+      showUsers();
+      document.getElementById("users")?.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
+  if (menuToggle && navbar) {
+    menuToggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  }
+}
