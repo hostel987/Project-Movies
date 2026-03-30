@@ -494,3 +494,39 @@ footer {
     border-color: transparent;
   }
 }
+
+/* Header Left */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Hamburger Button */
+#menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: transparent;
+  border: none;
+  color: #facc15;
+  cursor: pointer;
+}
+
+/* Login Button */
+#login-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #facc15;
+  color: #111827;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#login-btn:hover {
+  background: #eab308;
+  transform: translateY(-2px);
+}
