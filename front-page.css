@@ -462,7 +462,7 @@ footer {
 
 /* Typing Effect Only For One Heading */
 .typing-text::before {
-  content: "Welcome to Your Movie World";
+  content: "Welcome to Movie World";
   position: absolute;
   top: 0;
   left: 0;
