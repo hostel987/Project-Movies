@@ -531,7 +531,7 @@ footer {
   transform: translateY(-2px);
 }
 
-/* Desktop Navbar */
+/* Desktop */
 nav {
   display: flex;
   gap: 20px;
@@ -542,6 +542,7 @@ nav {
   display: none;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   #menu-toggle {
     display: block;
@@ -570,5 +571,10 @@ nav {
 
   nav.active {
     display: flex;
+  }
+
+  #login-btn {
+    padding: 9px 14px;
+    font-size: 14px;
   }
 }
