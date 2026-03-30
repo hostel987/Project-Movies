@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Movie Streaming Website</title>
+  <link rel="stylesheet" href="front-page.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🎬 My Movie Streaming</h1>
+
+    <nav>
+      <a href="#movies">Movies</a>
+      <a href="#favorites">Favorites</a>
+      <a href="#users">Users</a>
+      <a href="#subscriptions">Subscriptions</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+
+    <button id="theme-toggle"><a href="file:///M:/HTML/prince/login.html">Login</a></button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2 class="typing-text">Welcome to Your Movie World</h2>
+    <p>Stream your favorite movies anytime, anywhere.</p>
+
+    <div class="hero-buttons">
+      <button id="browse-btn">Browse Movies</button>
+      <button id="users-btn">View Users</button>
+    </div>
+  </section>
+
+  <!-- Movies Section -->
+  <section id="movies" class="movies">
+    <h2>Available Movies</h2>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search movies..." />
+      <select id="genreFilter">
+        <option value="All">All Genres</option>
+      </select>
+    </div>
+
+    <div id="movie-list" class="movie-list"></div>
+  </section>
+
+  <!-- Favorites Section -->
+  <section id="favorites" class="favorites">
+    <h2>Favorite Movies ❤️</h2>
+    <div id="favorite-list" class="movie-list"></div>
+  </section>
+
+  <!-- Users Section -->
+  <section id="users" class="users">
+    <h2>Registered Users</h2>
+    <div id="user-list" class="user-list"></div>
+  </section>
+
+  <!-- Subscription Section -->
+  <section id="subscriptions" class="subscriptions">
+    <h2>Subscription Plans</h2>
+    <div class="subscription-list">
+      <div class="subscription-card">
+        <h3>Free</h3>
+        <p>Basic access with limited movies and standard quality streaming.</p>
+      </div>
+      <div class="subscription-card">
+        <h3>Premium</h3>
+        <p>Enjoy HD streaming, more movies, and better user experience.</p>
+      </div>
+      <div class="subscription-card">
+        <h3>VIP</h3>
+        <p>Unlock all movies, exclusive content, and 4K ultra streaming.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews">
+    <h2>User Reviews</h2>
+    <div id="review-list" class="review-list"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 My Movie Streaming. All rights reserved.</p>
+    <p>@ Created by Prince Rathod.</p>
+  </footer>
+
+  <script src="front-page.js"></script>
+</body>
+</html>
